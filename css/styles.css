@@ -1,0 +1,61 @@
+@font-face {
+    font-family: roboto-thin;
+    src: url(../fonts/roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+.row{
+    height: 100vh;
+}
+
+.fc{
+    height: 100vh;
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+#textpart{
+    background-color: rgba(211, 211, 211, 0.27);
+    padding: 70px 60px 70px 60px;
+    height: 100vh;
+    width: 100%;
+}
+
+#textarea {
+    background-color: white;
+    height: 100%;
+    font-family: roboto-light !important;
+    color: #252727;
+    caret-color: rgba(0, 0, 0, 0.54);
+    box-shadow: 1px 1px 20px 0px grey;
+    padding: 60px;
+    font-size: 16.5px !important;
+
+    width: 100%;
+    resize: none;
+    overflow: auto;
+}
+
+#textarea:focus{
+    outline: none;
+}
+
+#fixed-bar{
+    height: 100%;
+    width: 100%;
+    background: rgba(242, 246, 248, 1);
+    background: -moz-linear-gradient(left, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 0%, rgba(181, 198, 208, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242, 246, 248, 1)), color-stop(0%, rgba(216, 225, 231, 1)), color-stop(100%, rgba(181, 198, 208, 1)));
+    background: -webkit-linear-gradient(left, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 0%, rgba(181, 198, 208, 1) 100%);
+    background: -o-linear-gradient(left, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 0%, rgba(181, 198, 208, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 0%, rgba(181, 198, 208, 1) 100%);
+    background: linear-gradient(to right, rgba(242, 246, 248, 1) 0%, rgba(216, 225, 231, 1) 0%, rgba(181, 198, 208, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#b5c6d0', GradientType=1);
+    border-left: 1px solid lightgray;
+    text-align: center;
+}

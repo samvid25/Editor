@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editor</title>
+    <link rel = "stylesheet" href = "css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src = "./js/script.js"></script>
+</head>
+<body>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class="col-sm-10 fc"> 
+                <div id = "textpart">
+                    <div id = "textarea" contenteditable="true" auofocus></div>
+                </div>
+            </div>
+
+            <div class = "col-sm-2 fc">
+                <div id = "fixed-bar">
+                    <br \><br \>  
+                    <button onclick="bold()">B</button>
+                    <button onclick="underline()">U</button>
+                    <button onclick="italic()">I</button>
+                    <button onclick="copy()">Copy</button>
+                    <button onclick="list()">List</button>
+                    <br \>
+                    <button onclick="justifyLeft()">Left</button>
+                    <button onclick="justifyRight()">Right</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    require('./renderer.js');
+</script>
+</html>
+
+<!-- $('textarea').autoResize(); -->
