@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.7.6"
+    "dialog": "^0.3.1",
+    "electron": "^1.7.6",
+    "remote": "^0.2.6"
   }
 }
