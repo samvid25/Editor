@@ -1,3 +1,4 @@
+/* ------------------------------Fonts------------------------------ */
 @font-face {
     font-family: roboto-thin;
     src: url(../fonts/roboto/Roboto-Thin.ttf);
@@ -7,19 +8,12 @@
     font-family: roboto-light;
     src: url(../fonts/roboto/Roboto-Light.ttf);
 }
+/* ----------------------------End Fonts---------------------------- */
 
-.row{
-    height: 100vh;
-}
 
-.fc{
-    height: 100vh;
-    width: 100%;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
 
-#textpart{
+/* ----------------------------Text Area---------------------------- */
+#textpart {
     background-color: rgba(211, 211, 211, 0.27);
     padding: 70px 60px 70px 60px;
     height: 100vh;
@@ -35,17 +29,20 @@
     box-shadow: 1px 1px 20px 0px grey;
     padding: 60px;
     font-size: 16.5px !important;
-
     width: 100%;
     resize: none;
     overflow: auto;
 }
 
-#textarea:focus{
+#textarea:focus {
     outline: none;
 }
+/* --------------------------End Text Area-------------------------- */
 
-#fixed-bar{
+
+
+/* -----------------------------Toolbar----------------------------- */
+#toolbar {
     height: 100%;
     width: 100%;
     background: rgba(242, 246, 248, 1);
@@ -59,9 +56,25 @@
     border-left: 1px solid lightgray;
     text-align: center;
 }
+/* ---------------------------End Toolbar--------------------------- */
+
+
+
+/* -----------------------------General----------------------------- */
+.row{
+    height: 100vh;
+}
+
+.fc{
+    height: 100vh;
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
 
  hr.style{
       border: 0;
       height: 1px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0));
  }
+/* ---------------------------End General--------------------------- */

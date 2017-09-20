@@ -4,31 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <title>Editor</title>
+
+        <!-- -----------------------------------------------Stylesheets----------------------------------------------- -->
         <link rel = "stylesheet" href = "css/styles.css">
         <link rel = "stylesheet" href = "fonts/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- ---------------------------------------------End Stylesheets--------------------------------------------- -->
+        
+
+        <!-- -------------------------------------------------Scripts------------------------------------------------- -->
         <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-        <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>        
+        <script src = "./node_modules/jquery/dist/jquery.min.js"></script>
         <script src = "./js/FileSaver.js"></script> 
-        <script src="./js/script.js"></script>    
-        <script src="./js/files.js"></script>                                          
+        <script src = "./js/script.js"></script>    
+        <script src = "./js/files.js"></script>                                          
         <script>
             require('./renderer.js');
         </script>
         <script>if (window.module) module = window.module;</script>
+        <!-- -----------------------------------------------End Scripts----------------------------------------------- -->    
     </head>
+
     <body>
         <div class = "container-fluid">
             <div class = "row">
+                <!-- -----------------------------------------------Editor----------------------------------------------- -->
                 <div class="col-sm-10 fc"> 
                     <div id = "textpart">
                         <div id = "textarea" contenteditable="true" auofocus></div>
                     </div>
                 </div>
+                <!-- ---------------------------------------------End Editor--------------------------------------------- -->
 
+                <!-- ----------------------------------------------Toolbar----------------------------------------------- -->                
                 <div class = "col-sm-2 fc">
-                    <div id = "fixed-bar">
+                    <div id = "toolbar">
                         <br \><br \>  
                         <button onclick="undo()"><i class="fa fa-undo" title="Undo"></i></button>
                         <button onclick="redo()"><i class="fa fa-repeat" title="Redo"></i></button>
@@ -53,12 +65,11 @@
                         <button onclick="copy()"><i class="fa fa-clone" title="Copy"></i></button>
                         <button onclick="cut()"><i class="fa fa-scissors" title="Cut"></i></button>                    
                         <br \><hr class = "style">
-                        <!-- <button onclick="createLink()">Link</button> -->
-                        <!-- <button onclick="highlight()">Highlight</button> -->
                         <button onclick="save()">Save As</button>
                         <button onclick="openfile()">Open</button>
                     </div>
                 </div>
+                <!-- ---------------------------------------------End Toolbar--------------------------------------------- --> 
             </div>
         </div>
     </body>

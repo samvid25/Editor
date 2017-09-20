@@ -1,7 +1,7 @@
 {
-  "name": "learn1",
+  "name": "Editor",
   "version": "1.0.0",
-  "description": "learning",
+  "description": "A simple note taking application built using Electron.js",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "dialog": "^0.3.1",
     "electron": "^1.7.6",
+    "jquery": "^3.2.1",
     "remote": "^0.2.6"
   }
 }
