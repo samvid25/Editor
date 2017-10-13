@@ -42,31 +42,47 @@
                 <div class = "col-sm-2 fc">
                     <div id = "toolbar">
                         <br \><br \>  
-                        <button onclick="undo()"><i class="fa fa-undo" title="Undo"></i></button>
-                        <button onclick="redo()"><i class="fa fa-repeat" title="Redo"></i></button>
-                        <br \><hr class = "style">                    
-                        <button onclick="bold()"><i class="fa fa-bold" title="Bold"></i></button>
-                        <button onclick="underline()"><i class="fa fa-underline" title="Underline"></i></button>
-                        <button onclick="italic()"><i class="fa fa-italic" title="Italic"></i></button>
-                        <button onclick="strikeThrough()"><i class="fa fa-strikethrough" title="Strikethrough"></i></button>
+                        <div class = "btn-group">
+                            <button type="button" class="btn btn-custom" onclick="undo()"><i class="fa fa-undo" title="Undo"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="redo()"><i class="fa fa-repeat" title="Redo"></i></button>
+                        </div>
                         <br \><hr class = "style">
-                        <button onclick="unorderedList()"><i class="fa fa-list-ul" title="Unordered"></i></button>
-                        <button onclick="orderedList()"><i class="fa fa-list-ol" title="Ordered"></i></button>
+                        <div class = "btn-group">                                          
+                            <button type="button" class="btn btn-custom" onclick="bold()"><i class="fa fa-bold" title="Bold"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="underline()"><i class="fa fa-underline" title="Underline"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="italic()"><i class="fa fa-italic" title="Italic"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="strikeThrough()"><i class="fa fa-strikethrough" title="Strikethrough"></i></button>
+                        </div>
                         <br \><hr class = "style">
-                        <button onclick="justifyLeft()"><i class="fa fa-align-left" title="Align Left"></i></button>
-                        <button onclick="justifyCenter()"><i class="fa fa-align-center" title="Align Center"></i></button>                    
-                        <button onclick="justifyRight()"><i class="fa fa-align-right" title="Align Right"></i></button>
-                        <button onclick="justifyAll()"><i class="fa fa-align-justify" title="Justify"></i></button>                    
+                        <div class = "btn-group">                        
+                            <button type="button" class="btn btn-custom" onclick="justifyLeft()"><i class="fa fa-align-left" title="Align Left"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="justifyCenter()"><i class="fa fa-align-center" title="Align Center"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="justifyRight()"><i class="fa fa-align-right" title="Align Right"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="justifyAll()"><i class="fa fa-align-justify" title="Justify"></i></button>
+                        </div>
                         <br \><hr class="style">
-                        <button onclick="subscript()"><i class="fa fa-subscript" title="Subscript"></i></button>
-                        <button onclick="superscript()"><i class="fa fa-superscript" title="Superscript"></i></button>
+                        <div class = "btn-group">                        
+                            <button type="button" class="btn btn-custom" onclick="unorderedList()"><i class="fa fa-list-ul" title="Unordered"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="orderedList()"><i class="fa fa-list-ol" title="Ordered"></i></button>
+                        </div>
+                        <!-- <br \><hr class = "style"> -->
+                        <div class = "btn-group">                        
+                            <button type="button" class="btn btn-custom" onclick="subscript()"><i class="fa fa-subscript" title="Subscript"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="superscript()"><i class="fa fa-superscript" title="Superscript"></i></button>
+                        </div>
                         <br \><hr class="style">
-                        <button onclick="selectAll()">Select All</button>
-                        <button onclick="copy()"><i class="fa fa-clone" title="Copy"></i></button>
-                        <button onclick="cut()"><i class="fa fa-scissors" title="Cut"></i></button>                    
+                        <div class = "btn-group">                        
+                            <button type="button" class="btn btn-custom" onclick="selectAll()">Select All</button>
+                            <button type="button" class="btn btn-custom" onclick="copy()"><i class="fa fa-clone" title="Copy"></i></button>
+                            <button type="button" class="btn btn-custom" onclick="cut()"><i class="fa fa-scissors" title="Cut"></i></button>
+                        </div>                  
                         <br \><hr class = "style">
-                        <button onclick="save()">Save As</button>
-                        <button onclick="openfile()">Open</button>
+                        <div class = "save-open">
+                        <div class = "btn-group">                        
+                            <button type="button" class="btn btn-custom" onclick="save()">Save As</button>
+                            <button type="button" class="btn btn-custom" onclick="openfile()">Open</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 <!-- ---------------------------------------------End Toolbar--------------------------------------------- --> 
@@ -74,3 +90,8 @@
         </div>
     </body>
 </html>
+
+
+<!-- To do: Implement save feature (not save as) -->
+<!-- To do: Implement highlight feature -->
+<!-- to do: Highlight feature in right click -->
