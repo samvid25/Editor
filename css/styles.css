@@ -56,6 +56,12 @@
     border-left: 1px solid lightgray;
     text-align: center;
 }
+
+.save-open{
+    position: absolute;
+    left: 23%;
+    bottom: 5%;
+}
 /* ---------------------------End Toolbar--------------------------- */
 
 
@@ -78,3 +84,53 @@
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0));
  }
 /* ---------------------------End General--------------------------- */
+
+
+
+/* --------------------------Custom Button-------------------------- */
+.btn-custom {
+    color: #ffffff;
+    background-color: #A1BCCC;
+    border-color: #130269;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.open .dropdown-toggle.btn-custom {
+    color: #ffffff;
+    background-color: #B5C6D0;
+    border-color: #130269;
+}
+
+.btn-custom:active,
+.btn-custom.active,
+.open .dropdown-toggle.btn-custom {
+    background-image: none;
+}
+
+.btn-custom.disabled,
+.btn-custom[disabled],
+fieldset[disabled] .btn-custom,
+.btn-custom.disabled:hover,
+.btn-custom[disabled]:hover,
+fieldset[disabled] .btn-custom:hover,
+.btn-custom.disabled:focus,
+.btn-custom[disabled]:focus,
+fieldset[disabled] .btn-custom:focus,
+.btn-custom.disabled:active,
+.btn-custom[disabled]:active,
+fieldset[disabled] .btn-custom:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom.active {
+    background-color: #A1BCCC;
+    border-color: #130269;
+}
+
+.btn-custom .badge {
+    color: #A1BCCC;
+    background-color: #ffffff;
+}
+/* -------------------------End Custom Button------------------------- */
